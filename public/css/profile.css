@@ -1,0 +1,142 @@
+.information{
+	height: 250px;
+	align-content: center;
+	background-color: white;
+	border-radius: 25px;
+	border: 2px solid grey;
+}
+
+.profile-pic{
+	float: left;
+	position: relative;
+	left: 25px;
+	top: 30px;
+	border: 2px red solid;
+	border-radius: 50%;
+}
+
+.personal-details{
+	float: left;
+	padding-left: 50px;
+	padding-top: 10px;
+	font-size: 5;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: white;
+}
+
+.star{
+	float: right;
+	padding: 5px 5px 5px 5px;
+}
+
+.star i{
+	color: #F4D03F;
+	width: 120px;
+	height: 120px;
+	clear: right;
+	padding-left: 60px;
+}
+
+.star h3{
+	font: Light 300;
+}
+
+#buttons{
+	float: none;
+	position: absolute;
+	right: 275px;
+	top: 275px;
+	height: 20px;
+}
+
+
+.contacts{
+	float: left;
+	padding-left: 10px;
+	margin-top: 3px;
+	width: 34%;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #f5f5f5;
+	border-radius: 25px;
+	border: 2px solid grey;
+}
+
+.description{
+	float: right;
+	padding-left: 10px;
+	margin-top: 3px;
+	width: 63%;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #f5f5f5;
+	border-radius: 25px;
+	border: 2px solid grey;
+}
+
+/*Top Dashboard*/
+body{
+	background-color: #eb8e86;
+}
+
+.main {
+  margin: auto;
+}
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	float: left;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 20px;
+	cursor: default;
+}
+
+.dashboard a {
+	float: right;
+	color: red;
+	text-align: center;
+	padding: 16px 20px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard .searchbar {
+	float: right;
+}
+
+.dashboard input[type=text] {
+	padding: 6px;
+	margin-top: 10px;
+	font-size: 17px;
+	border: none;
+}
+
+.dashboard .searchbar button {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	background: #ddd;
+	border: none;
+	cursor: pointer;
+}
+
+.dashboard .searchbar button:hover {
+	background: #ccc;
+}
+

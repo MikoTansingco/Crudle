@@ -1,0 +1,258 @@
+.main {
+  margin: auto;
+}
+
+body{
+	background-color: #eb8e86;
+}
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	color: red;
+	cursor: default;
+	float: left;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+.dashboard a {
+	color: red;
+	cursor: pointer;
+	float: right;
+	font-size: 17px;
+	padding: 16px 20px;
+	text-align: center;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.container {
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	max-width: 1000px;
+	padding: 5px 16px 32px;
+}
+
+.art {
+	border: 2px solid black;
+	display: block;
+	float: center;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	width: 50%;
+}
+
+.star1 {
+	color: #F4D03F;
+	float: right;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-top: -15px;
+	width: 5%;
+}
+
+.star2 {
+	color: #F4D03F;
+	float: left;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: -25px;
+	margin-top: 0px;
+	width: 5%;
+}
+
+.star3 {
+	color: #F4D03F;
+	float: right;
+	margin-bottom: -5px;
+	margin-left: 15px;
+	margin-right: 0px;
+	margin-top: -20px;
+	width: 5%;
+}
+
+.container h1 {
+	color: orange;
+	float: center;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.container h2 {
+	clear: right;
+	color: orange;
+	float: right;
+	font-size: 20px;
+	margin-bottom: -3px;
+	margin-left: 0px;
+	margin-right: 5px;
+	margin-top: 0px;
+	text-align: right;
+}
+
+.container h3 {
+	color: orange;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container h4 {
+	clear: right;
+	color: orange;
+	float: left;
+	font-size: 18px;
+	margin-bottom: -3px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: right;
+}
+
+.container h5 {
+	clear: right;
+	color: orange;
+	float: right;
+	font-size: 18px;
+	margin-bottom: -3px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: right;
+}
+
+.container p {
+	color: red;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	text-align: justify;
+	text-indent: 50px;
+}
+
+.avatar {
+	border-radius: 50%;
+	float: left;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+.reviewcontainer {
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	max-width: 1000px;
+	padding: 5px 16px;
+}
+
+.reviewcontainer h1 {
+	color: orange;
+	float: center;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.reviewcontainer h2 {
+	clear: right;
+	color: orange;
+	float: right;
+	font-size: 18px;
+	margin-bottom: -3px;
+	margin-left: 6px;
+	margin-right: -5px;
+	margin-top: -5px;
+	text-align: right;
+}
+
+.reviewcontainer p {
+	color: red;
+	font-size: 14px;
+	margin-bottom: 40px;
+	margin-right: auto;
+	margin-top: 5px;
+	text-align: justify;
+	text-indent: 50px;
+}
+
+.review {
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	max-width: 1000px;
+	padding: 5px 16px;
+}
+
+.review h1 {
+	color: orange;
+	float: center;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-right: 0px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.review h2 {
+	clear: right;
+	color: orange;
+	float: right;
+	font-size: 18px;
+	margin-bottom: -3px;
+	margin-left: 6px;
+	margin-right: -5px;
+	margin-top: -5px;
+	text-align: right;
+}
+
+.review p {
+	color: red;
+	font-size: 14px;
+	margin-bottom: 40px;
+	margin-right: auto;
+	margin-top: 5px;
+	text-align: justify;
+	text-indent: 50px;
+}

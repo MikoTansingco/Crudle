@@ -1,0 +1,117 @@
+.changeprofile{
+	height: 200px;
+	float: left;
+}
+
+.changeprofile img{
+	position: relative;
+	left: 25px;
+	top: 30px;
+	border: 2px red solid;
+	border-radius: 50%;
+
+	float: left;
+	clear: left;
+}
+
+.changeprofile button{
+	float: left;
+	clear: left;
+
+	position: relative;
+	top: 50px;
+	left: 50px;
+
+	background-color: #fcae4c;
+}
+
+.user-details, .user-contacts, .user-description{
+	float: left;
+	height: 200px;
+	border: 1px red;
+
+	padding-top: 40px;
+	padding-left: 60px;
+}
+
+.panel{
+	background-color: white;
+	height: 250px;
+}
+
+.main {
+  margin: auto;
+}
+
+body{
+	background-color: #eb8e86;
+}
+
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	float: left;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 20px;
+	cursor: default;
+}
+
+.dashboard a {
+	float: right;
+	color: red;
+	text-align: center;
+	padding: 16px 20px;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+#x{
+	margin-top: -60px;
+	padding-top: 100px;
+}
+
+#x button{
+	height: 35px;
+	width: 120px;
+	font-weight: 600;
+	font-size: 12px;
+	border-radius: 25px;
+	background-color: orange;
+}
+
+#x button:hover{
+	opacity: 0.5;
+}
+
+#save:disabled {
+    cursor: not-allowed;
+    color: #A8A8A8;
+    background-color: #E3E3E3;
+    border: 2px solid #E3E3E3;
+}
+
+#error {
+	color: red;
+	float: center;
+	font-size: 17px;
+	margin-top: 20px;
+	text-align: center;
+}

@@ -1,0 +1,73 @@
+.main {
+  margin: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #eb8e86;
+}
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	color: red;
+	cursor: default;
+	float: left;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+.dashboard a {
+	color: red;
+	cursor: pointer;
+	float: right;
+	font-size: 17px;
+	padding: 16px 20px;
+	text-align: center;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.container {
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	max-width: 300px;
+	padding: 16px;
+}
+
+.button {
+	background-color: orange;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 16px 20px;
+	width: 100%;
+}
+
+.button:hover {
+	opacity: 0.5;
+}

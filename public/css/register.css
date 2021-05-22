@@ -1,0 +1,101 @@
+.main {
+  margin: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #eb8e86;
+}
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	color: red;
+	cursor: default;
+	float: left;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+.dashboard a {
+	color: red;
+	cursor: pointer;
+	float: right;
+	font-size: 17px;
+	padding: 16px 20px;
+	text-align: center;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.container {
+	background-color: white;
+	border: 2px solid grey;
+	border-radius: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	max-width: 300px;
+	padding: 16px 16px 35.5px;
+}
+
+input[type=text], input[type=password] {
+	background: #f1f1f1;
+	border: none;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding: 15px;
+	width: 100%;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.button {
+	background-color: orange;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+	padding: 16px 20px;
+	width: 100%;
+}
+
+.button:hover {
+	opacity: 0.5;
+}
+
+#register:disabled {
+    cursor: not-allowed;
+    color: #A8A8A8;
+    background-color: #E3E3E3;
+    border: 2px solid #E3E3E3;
+}
+
+#error {
+	color: red;
+	float: left;
+	font-size: 17px;
+	margin-top: -10px;
+	text-align: center;
+}

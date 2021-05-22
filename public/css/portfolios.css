@@ -1,0 +1,134 @@
+.main {
+  margin: auto;
+}
+
+body{
+	background-color: #eb8e86;
+}
+
+.dashboard {
+	background-color: orange;
+	overflow: hidden;
+}
+
+.dashboard b{
+	color: red;
+	cursor: default;
+	float: left;
+	font-size: 20px;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+.dashboard a {
+	color: red;
+	cursor: pointer;
+	float: right;
+	font-size: 17px;
+	padding: 16px 20px;
+	text-align: center;
+}
+
+.dashboard a:hover {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard a.active {
+	background-color: #AAAAAA;
+	color: white;
+	cursor: pointer;
+}
+
+.dashboard .searchbar {
+	float: right;
+}
+
+.dashboard input[type=text] {
+	border: none;
+	font-size: 17px;
+	margin-top: 10px;
+	padding: 6px;
+}
+
+.dashboard .searchbar button {
+	background: #ddd;
+	border: none;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.dashboard .searchbar button:hover {
+	background: #ccc;
+}
+
+.flex-portfolios {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.column {
+	float: center;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 25%;
+}
+
+.column:hover {
+	opacity: 0.5;
+}
+
+.portfolios:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.content {
+	background-color: #E0E0E0;
+	border: 2px solid grey;
+	border-radius: 25px;
+	padding: 10px;
+}
+
+.art {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 250px;
+}
+
+.content h1 {
+	margin-bottom: 10px;
+	color: orange;
+	margin-top: 5px;
+	max-width: 18ch;
+}
+
+.content p {
+	color: red;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: left;
+	text-indent: 25px;
+	max-width: 60ch;
+}
+
+.addbutton {
+	background-color: orange;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+	margin-left: 37.65%;
+	margin-top: 10px;
+	padding: 16px 20px;
+	width: 25%;
+}
