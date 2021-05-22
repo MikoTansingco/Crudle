@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/editreview.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a class="active">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	<form method="post" action="/editreview/{{id}}" class="reviewcontainer">
+		<label for="review"><h1>Edit review<br></h1></label>
+		<input type="hidden" id="portfolio" name="portfolio" value="{{portfolio}}">
+		<textarea id="desc" name="desc" style="width: 995px; height: 100px;" required>{{desc}}</textarea>
+		<div class="star2">
+			<i class="material-icons" style="font-size: 20px;">star</i>
+		</div>
+		
+		<input type="hidden" id="oldstars" name="oldstars" value="{{stars}}">
+		<label for="stars" style="color: orange;">Stars:</label>
+		<select id="stars" name="stars">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<button type="submit" id="post" class="button">Edit</button>
+	</form>
+</div>
+</body>
+</html>

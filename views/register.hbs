@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/register.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/register.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a href="/portfolios">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a class="active" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	<div id="Register">
+		<form method="post" action="/register/register" class="container">
+			<h1>Register</h1>
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" id="username" name="username" required>
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<label for="name"><b>Name</b></label>
+			<input type="text" placeholder="Enter Name" name="name" required>
+			<p id="error"></p>
+			<button type="submit" id="register" class="button">Register</button>
+			<a href="/login" style="float: right">Login</a>
+		</form>
+	</div>
+</div>
+</body>
+</html>

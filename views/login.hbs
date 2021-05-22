@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a href="/portfolios">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a class="active" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	<div id="Login">
+		<form method="post" action="/login/login" class="container">
+			<h1>Login</h1>
+			<label for="username"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="username" required>
+			<label for="password"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<button type="submit" class="button">Login</button>
+			<label><input type="checkbox" checked="checked" name="remember" value="remember"> Remember me</label>
+			<a href="/register" style="float: right">Register</a>
+		</form>
+	</div>
+</div>
+</body>
+</html>

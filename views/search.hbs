@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/search.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a href="/portfolios">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a class="active">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+		<form method="get" action="/search" class="searchbar">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="material-icons" style="font-size:27px;">search</i>
+			</div>
+		</div>
+	</div>
+	<div class="title">
+		<h1>You searched for: {{search}}</h1>
+	</div>
+	<div class="flex-portfolios">
+		{{#each results}}
+			{{> portfoliocard}}
+		{{/each}}
+	</div>
+</div>
+</body>
+</html>

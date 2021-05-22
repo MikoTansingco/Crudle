@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "/css/profile.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--Oswald-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+	<!--Ubuntu-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a href="/portfolios">My Portfolios</a>
+		<a class="active"> My Profile</a>
+		<a href="/home">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+		<form method="get" action="/search" class="searchbar">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="material-icons" style="font-size:27px;">search</i>
+			</div>
+		</div>
+	</div>
+
+	<div class="information">
+		<div class="profile-pic"><img src = "{{avatar}}" style="height: 204px; width: 208px; border-radius: 50%"></div>
+
+		<div class="details">
+			<div class="personal-details">
+				<h2>{{name}}</h2>
+				<h3>{{username}}</h3>
+				<h3>{{profession}}</h3>
+				<h3>
+			</div>
+
+			<div class="buttons" id="buttons">
+				<a href="/editprofile/{{username}}"><button type="button">Edit Profile Page</button></a>
+				<a href="/changepassword/{{username}}"><button type="button">Change Password</button></a>
+				<a href="/delete/profile/{{username}}"><button type="button">Delete Profile Page</button></a>
+			</div>
+
+			<div class="star">
+				<i class="material-icons" style="font-size:120px;">star</i>
+				<h3>{{stars}} STARS ACCUMULATED</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="contacts">
+		<h3>Email: {{email}}</h3>
+		<h3>Birthday: {{birthday}}</h3>
+		<h3>Contact Number: {{contactnumber}}</h3>
+		<h3>Country: {{country}}</h3>
+		<h3>Address: {{address}}</h3>
+	</div>
+
+	<div class="description">
+		<p>{{bio}}</p>
+	</div>
+</div>
+</body>
+</html>

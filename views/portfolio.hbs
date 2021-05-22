@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/portfolio.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/portfolio.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a class="active">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	<div class="container" name="content">
+		<h1>{{owner}}</h1>
+		<a href="/profile/{{owner}}"><img src="{{avatar}}" alt="avatar" class="avatar"></a>
+		<div class="star1">
+			<i class="material-icons" style="font-size: 55px;">star</i>
+		</div>
+		<h2>{{stars}} stars</h2>
+		<a href="/editportfolio/{{title}}"><button type="submit" class="button">Edit Portfolio</button></a>
+		<a href="/delete/portfolio/{{title}}"><button type="submit" class="button">Delete</button></a>
+		<img src="{{art}}" alt="1" class="art">
+		<h4>Type: {{type}}</h4>
+		<h3>{{title}}</h3>
+		<p>{{desc}}</p>
+		<h4>Genre: {{genre}}</h4>
+		<h5>Date created: {{date}}</h5>
+	</div>
+	<form class="reviewcontainer">
+		<label for="review"><h1>Post a review<br></h1></label>
+		<input type="hidden" id="title" name="title" value="{{title}}">
+		<textarea id="desc" name="desc" style="width: 995px; height: 100px;" required></textarea>
+		<div class="star2">
+			<i class="material-icons" style="font-size: 20px;">star</i>
+		</div>
+		<label for="stars" style="color: orange;">Stars:</label>
+		<select id="stars" name="stars">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<button type="button" id="post" class="button">Post</button>
+	</div>
+	<div id="reviews">
+		{{#each review}}
+			{{> review}}
+		{{/each}}
+		</div>
+	</div>
+</div>
+</body>
+</html>

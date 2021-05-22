@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/delete.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a href="/portfolios">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	<div id="Delete">
+		<form method="post" action="/delete/delete/{{type}}/{{name}}" class="container">
+			<h1 id="desc">Delete {{type}}: {{name}}</h1>
+			<label for="password"><b>Password</b></label>
+			<input type="hidden" name="type" value="{{type}}" required>
+			<input type="hidden" name="name" value="{{name}}" required>
+			<input type="password" placeholder="Enter Password" name="password" required>
+			<button type="submit" class="button">Delete</button>
+			<button type="button" onclick="history.go(-1)" class="button">Cancel</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

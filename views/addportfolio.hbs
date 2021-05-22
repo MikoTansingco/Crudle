@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "/css/addportfolio.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/addportfolio.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="dashboard">
+		<b>Crudle</b>
+		<a class="active">My Portfolios</a>
+		<a href="/profileme"> My Profile</a>
+		<a href="/home">Home</a>
+		<a href="/login" style="float:left;">Login</a>
+		<a href="/logout" style="float:left;">Logout</a>
+	</div>
+	
+	<form method="post" action="/addportfolio/addportfolio">
+		<div class="frame" id="art" style="height: 550px; text-align: center;">
+			<img src="/pics/Art.png" height="400" width="400">
+			<br>
+			<br>
+			<p><b>CHOOSE YOUR ARTWORK</b></p>
+			<input type="file" id="file" name="file">
+		</div>
+	
+		<div class="frame" id="info" style="float: center; width: 55%">
+			<h1>Portfolio Information</h1> 
+
+			
+			  <label for="types">Select Art Type:</label>
+			  <select id="types" name="types">
+				<option value="Painting">Painting</option>
+				<option value="Drawing">Drawing</option>
+				<option value="Animation">Animation</option>
+				<option value="Sculpture">Sculpture</option>
+				<option value="Photo">Photo</option>
+				<option value="Video">Video</option>
+				<option value="Craftsmanship">Craftsmanship</option>
+				<option value="Others">Others</option>
+			  </select>
+			
+
+			<br>
+
+			<label for="b"><b>Title</b><br></label>
+			<input type="text" id="title" name="title" required>
+
+			<br>
+			<br>
+
+			<label for="f"><b>Genre</b><br></label>
+			<input type="text" id="f" name="genre" required>
+
+			<br>
+			<br>
+
+			<label for="d"><b>Date Created</b><br></label>
+			<input type="date" id="d" name="date" required>
+
+			<br>
+			<br>
+			<br>
+
+			<label for="e"><b>Description</b><br></label>
+			<textarea id="e" name="desc" style="width: 550px; height: 100px;" required></textarea>
+			
+			<p id="error"></p>
+			
+			<div class="panel" id="x" style="text-align:center">
+				<button type="submit" id="add">Add Portfolio</button>
+				<br>
+				<br>
+				<button onclick="history.go(-1)" type="button">Cancel</button>
+			</div>
+		</div>
+	</form>
+</body>
