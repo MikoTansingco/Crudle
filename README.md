@@ -14,6 +14,13 @@ of the folder and typing cd [folder_name] (ex. cd C:\Users\Miko Tansingco\Docume
     - npm install express --save
     - npm install body-parser
     - npm install mongodb --save
+    - npm install fs
+    - npm install cookie-parser
+    - npm install bcrypt
+    - npm install jsonwebtoken
+    - npm install morgan
+    - npm install mongoose
+    - npm install hbs
 4. Afterwards, type node index.js (or superviser index.js, if you have it installed), and wait for the message 
 "Listening to port number 3000". 
 5. Open up your brwoser, and go to this url link: http://localhost:3000/home 
